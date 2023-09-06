@@ -1,0 +1,139 @@
+body {
+   background:url(images/background.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+/* This is midle section */ 
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+
+.topNav li {
+    display: inline-block;
+    list-style: none;
+    justify-content:space-evenly;
+    list-style: none;
+    padding: 0px, 20px;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #07439C;
+    margin: 74px;
+    margin-top: 30px;
+
+}
+
+a { 
+    text-decoration: none;
+    cursor: pointer;}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* This is midle section */ 
+
+.biglogo {
+    display: flex;
+    justify-content: center;
+    width: 670px;
+    height: 500px;
+    margin-left: 30%;
+    margin-top: 70px;
+    position: relative;
+}
+
+h1 {
+   color: #07439C;
+   text-align: center;
+   font-family: Merriweather, Arial, Helvetica, sans-serif;
+   font-size: 24px;
+}
+
+
+
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 210px;
+    padding: 10px;
+    background-color: #07439C;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 24px;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 10%;
+}
+
+.button:hover {
+    background-color: pink;
+    color: #07439C;
+    
+    
+  }
+
+    /*  Footer */
+
+    h2 {
+        position:absolute;
+        top: 130%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color: #07439C;
+        text-align: center;
+        font-family: Merriweather, Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        }
+
+    .pic {
+        float:right;
+        margin-top: 300px;
+
+    }
+
+ .footer  {    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px;
+    font-size: 28px;
+}
+
+
+    .list2 {
+    list-style: none;
+    margin-bottom: 77px;
+    margin-left: 155px;
+    color: #07439C;
+    }
+
+
+    h3, br {
+        text-align: center;
+        color: #07439C;
+        margin-bottom: 28px;
+        padding-top: 5%;
+        font-family: 'Merriweather', serif;
+        font-size: 28px;
+       
+    }
+
+
+footer{
+    background-color: white;
+}
