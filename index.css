@@ -1,7 +1,10 @@
 body {
    background:url(images/background.png);
-   background-size:auto;
+   background-size:cover;
    background-repeat: no-repeat;
+   background-position: center top;
+   height: 1024px;
+   margin: 0;
 }
 
 /* This is midle section */ 
@@ -15,7 +18,7 @@ header {
 }
 
 
-.topNav li {
+header .topNav li {
     display: inline-block;
     list-style: none;
     justify-content:space-evenly;
@@ -29,6 +32,9 @@ header {
     margin-top: 30px;
 
 }
+
+
+
 
 a { 
     text-decoration: none;
@@ -185,9 +191,6 @@ p {
 
 /*  My work */
 
-
-
-/* First Project */
 
 .btnContainer2  {
     display: flex;
