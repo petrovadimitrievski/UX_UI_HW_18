@@ -1,3 +1,22 @@
+@media only screen and (max-width: 600px) {
+    
+    body { 
+        display: inline-block;
+        /* grid-template-areas */
+        /* grid-template-rows */
+        /* grid-template-columns  */
+        width: 100%;
+
+    }
+      .flexContainer {
+        display: flex;
+        flex-direction: row;
+      }
+
+
+}
+
+
 body {
    background:url(images/background.png);
    background-size:cover;
@@ -14,7 +33,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
 }
 
 
@@ -24,17 +42,13 @@ header .topNav li {
     justify-content:space-evenly;
     list-style: none;
     padding: 0px, 20px;
-    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: #07439C;
     margin: 74px;
     margin-top: 30px;
-
 }
-
-
-
 
 a { 
     text-decoration: none;
@@ -92,29 +106,28 @@ h1 {
     background-color: pink;
     color: #07439C;
     transition: all .3s ease;
-    
   }
 
     /*  Footer */
 
-    h2 {
-        position:absolute;
-        top: 130%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        color: #07439C;
-        text-align: center;
-        font-family: 'Merriweather', Arial, Helvetica, sans-serif;
-        font-size: 24px;
-        }
+h2 {
+    position:absolute;
+    top: 130%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #07439C;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    }
 
-    .pic {
-        float:right;
-        margin-top: 300px;
+.pic {
+     float:right;
+     margin-top: 300px;
 
     }
 
- .footer  {    
+ .footer {    
     display: flex;
     justify-content: space-between;
     padding: 0 64px;
@@ -122,7 +135,7 @@ h1 {
 }
 
 
-    .list2 {
+.list2 {
     list-style: none;
     margin-bottom: 77px;
     margin-left: 155px;
@@ -130,14 +143,13 @@ h1 {
     }
 
 
-    h3, br {
-        text-align: center;
-        color: #07439C;
-        margin-bottom: 28px;
-        padding-top: 5%;
-        font-family: 'Merriweather', serif;
-        font-size: 28px;
-       
+h3, br {
+    text-align: center;
+    color: #07439C;
+    margin-bottom: 28px;
+    padding-top: 5%;
+    font-family: 'Merriweather', serif;
+    font-size: 28px;
     }
 
 
@@ -151,11 +163,11 @@ footer{
 .mySkills {
     background-color: white;
     padding: 100px 15px;
-  
 }
 
 .flexContainer {
     display: flex;
+    flex-direction: row;
     height: 500px;
     width: 500;
     background-color: #F6DBE3;
@@ -166,76 +178,89 @@ footer{
 }
 
 .flexItem {
-background-color: white;
-padding: 50px;
-margin: 0 auto;
-height: 400px;
-max-width: 300px;
-justify-content: center;
-align-items: center;
-text-align: center;
+ background-color: white;
+ padding: 50px;
+ margin: 0 auto;
+ height: 400px;
+ max-width: 300px;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
 }
 
 
 p { 
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    font-size: 18px;
+ font-family: 'roboto', Arial, Helvetica, sans-serif;
+ font-size: 18px;
 }
 
 .uxH1 { 
-    font-family: 'Merriweather', serif;
-    font-size: 36px;
-    
+ font-family: 'Merriweather', serif;
+ font-size: 36px;   
 }
 
 
 /*  My work */
+.workGrid1 {
+    display: grid;
+    padding-bottom: 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "mockup text" 
+    "text2 mockup2"
+    "mockup3 text3 " ;
+}
+
+
+.mockup {
+    grid-area: mockup;
+}
+
+.mockup2 {
+        grid-area: mockup2;
+    }
+
+.mockup3 {
+        grid-area: mockup3;
+    }
+
+.text {
+        grid-area: text;
+    }
+    
+.text2 {
+         grid-area: text2;
+        }
+
+.text3 {
+        grid-area: text3;
+    }
+
 
 
 .btnContainer2  {
     display: flex;
     margin-bottom: 20%;
-    
   }
 
 
 
-
-
-.workGrid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap:50px, 30px;
-    background-color: white;
-    
-}
-
-
-.workGrid .left  {
-    overflow: hidden;
-    padding-left: 10%;
-    padding-bottom: 5%;
-    padding-top: 10%;
-    
-}
-
- h4 {
+h4 { 
     font-size: 24px;
- }
+    font-family: 'Merriweather', serif ;
+}
 
-.right {
-    padding-top: 10%;
+
+.text, .text2 , .text3{  
     width: 440px; 
-    height: 350;
+    height: 350px;
 }
 
 
-.all { 
-    font-family: 'Merriweather', serif;
-    font-size: 36px;
-    background-color: pink;
-    display: flex;
-    justify-content: center;
- padding-bottom: 5%;
 
+.mockup, .text2{ 
+    padding-left: 160px;
 }
+
+
