@@ -7,7 +7,7 @@ body {
     margin: 0;
  }
  
- /* This is midle section */ 
+ /* This is header*/ 
  
  header {
      width: 100%;
@@ -38,6 +38,12 @@ body {
  a:hover {
      text-decoration: none;
      transform: all .5s ease ;
+ }
+ .smallLogo {
+    padding-left: 50px;
+    width:210.06px; 
+    height:71.614px;
+    margin-top: -50px;
  }
  
  
