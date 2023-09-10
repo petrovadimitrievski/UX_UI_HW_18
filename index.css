@@ -175,10 +175,10 @@ body {
   font-size: 18px;
  }
  
- .uxH1 { 
+ .uxH1, h3{ 
   font-family: 'Merriweather', serif;
   font-size: 36px;  
-  padding-bottom: 200px;
+  padding-bottom: 100px;
  }
  
  
