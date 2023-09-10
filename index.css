@@ -175,7 +175,7 @@ body {
   font-size: 18px;
  }
  
- .uxH1, h3{ 
+ .uxH1{ 
   font-family: 'Merriweather', serif;
   font-size: 36px;  
   padding-bottom: 100px;
@@ -255,7 +255,8 @@ body {
  
  
  .mockup, .mockup3,.text2{ 
-     padding-left: 160px;
+     padding-left: 200px;
+     
  }
  
 
@@ -288,10 +289,11 @@ body {
  
      .workGrid1 {
       display: grid;
-         padding-bottom: 5%;
-         grid-template-columns: 1fr;
-         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-         grid-template-areas: 
+      column-gap: 100px;
+      padding-bottom: 5%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
          "mockup" 
          "text" 
          "mockup2"
@@ -299,25 +301,29 @@ body {
          "mockup3" 
          "text3" ;
  
-         justify-items: center;
-         text-align: center;
+      justify-items: center;
+      text-align: center;
      }
  
      .mockup, .text2{ 
-         padding-left:0px;
+      padding-left:0px;
      }
  
      .button {
-         width: 210px;
-         padding: 10px;
-         margin-top: 0px;
-         margin-bottom: 10%;
+      width: 210px;
+      padding: 10px;
+      margin-top: 0px;
+      margin-bottom: 10%;
      }
  
      .btnContainer2  {
-         display: flex;
-         margin-bottom: 20%;
-         justify-content: center;
+      display: flex;
+      margin-bottom: 20%;
+      justify-content: center;
+       }
+
+       .text, .text2, .text3 {
+        margin-top: -100px;
        }
  
  }
