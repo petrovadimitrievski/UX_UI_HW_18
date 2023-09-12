@@ -71,6 +71,8 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
+    
+     
  }
  
  .button {
@@ -126,9 +128,13 @@ h2 {
    text-align: center;
    color: #07439C;
    margin-bottom: 28px;
-   padding-bottom: 100px;
+   padding-bottom: 50px;
+   padding-top: 50px;
    font-family: 'Merriweather', serif;
    font-size: 28px;
+   height: 50px;
+   background-image: radial-gradient(pink 5%, white 70%);
+   
   }
 
 
@@ -290,7 +296,6 @@ h2 {
      justify-content: center;
      text-align: center;
      align-items: center;
-     /* width: 50%; */
      padding: 25px;
      }
  
