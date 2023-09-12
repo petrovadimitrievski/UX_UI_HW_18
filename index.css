@@ -63,7 +63,7 @@ body {
     color: #07439C;
     text-align: center;
     font-family: Merriweather, Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 32px;
  }
  
  
@@ -95,7 +95,7 @@ body {
  
      /*  Footer */
  
- h2 {
+ h5 { 
      position:absolute;
      top: 130%;
      left:50%;
@@ -104,14 +104,8 @@ body {
      text-align: center;
      font-family: Arial, Helvetica, sans-serif;
      font-size: 24px;
-     }
- 
- .pic {
-      float:right;
-      margin-top: 300px;
- 
-     }
- 
+      } 
+
   .footer {    
      display: flex;
      justify-content: space-between;
@@ -128,13 +122,23 @@ body {
      }
  
  
+h2 {
+   text-align: center;
+   color: #07439C;
+   margin-bottom: 28px;
+   padding-bottom: 100px;
+   font-family: 'Merriweather', serif;
+   font-size: 28px;
+  }
+
+
  h3, br {
      text-align: center;
      color: #07439C;
      margin-bottom: 28px;
      padding-top: 5%;
      font-family: 'Merriweather', serif;
-     font-size: 28px;
+     font-size: 24px;
      }
  
  
@@ -181,11 +185,7 @@ body {
   font-size: 18px;
  }
  
- .uxH1{ 
-  font-family: 'Merriweather', serif;
-  font-size: 36px;  
-  padding-bottom: 100px;
- }
+
  
  
  /*  My work */
@@ -268,6 +268,7 @@ body {
 
  .flexItem p{
      text-align: center;
+     
  }
  
  .workGrid1 img{
@@ -280,20 +281,26 @@ body {
      
     body { 
     display: inline-block;
-
- 
      }
      
      .flexContainer {
      display: flex;
      flex-direction: column;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     /* width: 50%; */
+     padding: 25px;
      }
  
      .flexItem {
-     width: 100%;
+     width: 50%;
      }
- 
-     .workGrid1 {
+
+    
+
+     .workGrid1{
       display: grid;
       column-gap: 100px;
       padding-bottom: 5%;
@@ -331,5 +338,6 @@ body {
        .text, .text2, .text3 {
         margin-top: -100px;
        }
- 
+
+
  }
