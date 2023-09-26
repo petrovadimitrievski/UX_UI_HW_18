@@ -1,8 +1,13 @@
+html{ 
+    scroll-behavior: smooth;
+}
+
 body {
     background:url(images/background.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center top;
+    align-items: center;
     height: 1024px;
     margin: 0;
  }
@@ -16,6 +21,12 @@ body {
      align-items: center;
  }
  
+
+ 
+ .toggle{
+    display: inline;
+    
+ }
  
  header .topNav li {
      display: inline-block;
@@ -29,8 +40,21 @@ body {
      color: #07439C;
      margin: 74px;
      margin-top: 30px;
+     
  }
  
+ .toggleContainer{
+    display: none;
+    
+ }
+
+
+ .active{
+    display: block;
+    
+ }
+
+
  a { 
      text-decoration: none;
      cursor: pointer;}
@@ -119,7 +143,7 @@ body {
  .list2 {
      list-style: none;
      margin-bottom: 77px;
-     margin-left: 155px;
+     margin-left: 200px;
      color: #07439C;
      }
  
@@ -150,9 +174,75 @@ h2 {
  
  footer{
      background-color: white;
+     flex-wrap: wrap;
+     gap: 20px 30px;
+     gap: 30px;
  }
+
+ i {
+    margin-right: 20px;
+  }
  
+  .footerPic{
+    width:555px; 
+    height:500px;
+    float: right;
+  }
+
  
+
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(241, 227, 230);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: pink;
+    color: #07439C;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(230, 218, 220);
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #e8eef7;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+
+
+
+
  /* This is My UX Skills section  */
  
  .mySkills {
@@ -283,7 +373,7 @@ h2 {
  }
  
  
- @media only screen and (max-width: 600px) {
+ @media screen and (max-width: 600px) {
      
     body { 
     display: inline-block;
@@ -343,6 +433,13 @@ h2 {
        .text, .text2, .text3 {
         margin-top: -100px;
        }
+
+
+
+       .column,  input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
 
 
  }
